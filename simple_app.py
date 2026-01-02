@@ -1,31 +1,38 @@
-expenses = []
-print("==============================================")
-print("     Welcome To My SpendWide Application      ")
-print("==============================================")
+choice = 'y'
 
-user = input("Enter your good name please .... : ")
+while choice == 'y':
 
-amount = int(input("Hey {} Enter Your Amount : ".format(user)))
+    expenses = []
+    print("==============================================")
+    print("     Welcome To My SpendWide Application      ")
+    print("==============================================")
 
-category = input("Enter your category spend money (food , travel , etc..) : ")
+    user = input("Enter your good name please .... : ")
 
-note = input("\nEnter note for your reminder what spend your money : ")
+    amount = float(input("Hey {} Enter Your Amount : ".format(user)))
 
-expense = {
-    "amount" : amount,
-    "category" : category,
-    "note" : note
+    category = input("Enter your category spend money (food , travel , etc..) : ")
 
-}
+    note = input("\nEnter note for your reminder what spend your money : ")
 
+    expense = {
+        "amount" : amount,
+        "category" : category,
+        "note" : note
 
-expenses.append(expense)
-
-print("\nHey {} All expenses added to be succesfully".format(user))
-
-
-print("all expenses : ")
+    }
 
 
-for exp in expenses:
-    print(exp)
+    expenses.append(expense)
+
+    print("\nHey {} All expenses added to be succesfully".format(user))
+
+
+    print("all expenses : ")
+
+
+    for exp in expenses:
+        print(exp)
+    choice = input("Do want contiune again (y/n) -> : ").lower()
+if choice != 'y':
+    print("Thank you choosing my app {}  regard Dheena.".format(user))
