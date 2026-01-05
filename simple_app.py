@@ -1,13 +1,15 @@
+
+
+expenses = []
+print("==============================================")
+print("     Welcome To My SpendWide Application      ")
+print("==============================================")
+
+user = input("Enter your good name please .... : ")
+
 choice = 'y'
 
 while choice == 'y':
-
-    expenses = []
-    print("==============================================")
-    print("     Welcome To My SpendWide Application      ")
-    print("==============================================")
-
-    user = input("Enter your good name please .... : ")
 
     amount = float(input("Hey {} Enter Your Amount : ".format(user)))
 
